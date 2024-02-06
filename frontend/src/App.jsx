@@ -3,6 +3,7 @@ import Layout from './component/Layout.jsx'
 import Home from './pages/Home.jsx'
 import Formation from './pages/Formation.jsx'
 import Participer from './pages/Participer.jsx'
+import Semestre from './pages/Semestre.jsx'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Layout/>} >
           <Route index element={<Home/>} />
           <Route path='formation' element={<Formation/>}/>
+          <Route path='/formation/:nv/:sem' element={<Semestre/>} />
           <Route path='participer' element={<Participer/>} />
         </Route>
       </Routes>
